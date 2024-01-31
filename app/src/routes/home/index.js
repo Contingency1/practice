@@ -6,7 +6,7 @@ const router = express.Router();
 
 //데이터 조회 GET
 router.get("/", ctrl.output.main);
-router.get("/lists", ctrl.process.getDescription);
+router.get("/lists", ctrl.output.getDescription);
 
 //데이터 생성 POST
 router.post("/lines", ctrl.process.appendDescription);
